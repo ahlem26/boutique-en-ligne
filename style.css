@@ -1,108 +1,73 @@
-/* ====== IMPORT DES POLICES GOOGLE ====== */
-@import url('https://fonts.googleapis.com/css2?family=...');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+QLD+Hand:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ====== RÉINITIALISATION DE BASE ====== */
 * {
     margin: 0px;
-    /* Supprime les marges par défaut de tous les éléments */
     padding: 0px;
-    /* Supprime les paddings (espacements internes) par défaut */
 }
 
 body {
     padding-top: 80px;
-    /* Laisse de l’espace en haut pour éviter que le contenu passe sous le header fixe */
 }
 
-/* ====== BARRE DE NAVIGATION (HEADER FIXE) ====== */
+/* Barre de navigation */
 
 header {
     position: fixed;
-    /* Fixe le header pour qu'il reste visible en haut même quand on fait défiler la page */
+    /* Fixe le header en haut */
     top: 0;
-    /* Positionné en haut de la page */
     left: 0;
-    /* Collé à gauche */
     width: 100%;
-    /* Prend toute la largeur de la page */
     background-color: #634141;
-    /* Couleur de fond bordeaux */
     z-index: 1000;
-    /* S'assure que le header reste au-dessus de tout autre élément */
     height: 80px;
-    /* Hauteur du header */
+    /* reste au-dessus du contenu */
 }
 
-/* ====== CONTENEUR DE LA NAVBAR ====== */
 .navbar {
     display: flex;
-    /* Utilise Flexbox pour organiser les éléments horizontalement */
     justify-content: space-between;
-    /* Espace les éléments aux extrémités (gauche et droite) */
     align-items: center;
-    /* Centre les éléments verticalement */
     padding: 20px 50px;
-    /* Espacement interne : 20px en haut/bas, 50px à gauche/droite */
 }
 
-/* ====== NOM DE LA MARQUE À GAUCHE ====== */
+/* Nom à gauche */
 .brand h1 {
     font-size: 1.5rem;
-    /* Taille de la police */
     font-weight: 500;
-    /* Épaisseur de la police (moyenne) */
     color: #ffffff;
-    /* Couleur blanche */
 }
 
-/* ====== MENU DE NAVIGATION À DROITE ====== */
+/* Menu à droite */
 .menu {
     display: flex;
-    /* Affiche les liens de menu côte à côte */
     gap: 30px;
-    /* Espacement horizontal entre les liens */
-    /* 'gap' fonctionne dans les conteneurs flex et grid */
+    /*sert à espacer les éléments à l'intérieur d'un conteneur flex ou grid */
 }
 
 .menu a {
     font-family: "Montserrat", sans-serif;
-    /* Utilisation d'une police élégante */
     text-decoration: none;
-    /* Supprime le soulignement des liens */
     color: #ffffff;
-    /* Texte blanc */
     font-weight: 200;
-    /* Police très fine */
 }
 
-/* ====== BOUTON DE CONNEXION / UTILISATEUR ====== */
 .cnx {
     color: #ffffff;
-    /* Couleur du texte */
     display: flex;
-    /* Affichage horizontal des icônes et textes */
     align-items: center;
-    /* Centrage vertical */
     gap: 10px;
-    /* Espace entre icône et texte */
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 200;
-    /* Police fine */
     cursor: pointer;
-    /* Change le curseur au survol */
 }
 
-/* Icône utilisateur */
 #user {
     font-size: 25px;
-    /* Taille de l'icône (par exemple Font Awesome) */
 }
 
-/* Icône du menu hamburger (affiché sur mobile uniquement) */
 #bars {
     display: none;
-    /* Caché par défaut, s'affichera avec les media queries */
 }
 
 /* home */
