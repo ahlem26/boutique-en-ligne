@@ -1,0 +1,1108 @@
+/* ====== IMPORT DES POLICES GOOGLE ====== */
+@import url('https://fonts.googleapis.com/css2?family=...');
+
+/* ====== RÉINITIALISATION DE BASE ====== */
+* {
+    margin: 0px;
+    /* Supprime les marges par défaut de tous les éléments */
+    padding: 0px;
+    /* Supprime les paddings (espacements internes) par défaut */
+}
+
+body {
+    padding-top: 80px;
+    /* Laisse de l’espace en haut pour éviter que le contenu passe sous le header fixe */
+}
+
+/* ====== BARRE DE NAVIGATION (HEADER FIXE) ====== */
+
+header {
+    position: fixed;
+    /* Fixe le header pour qu'il reste visible en haut même quand on fait défiler la page */
+    top: 0;
+    /* Positionné en haut de la page */
+    left: 0;
+    /* Collé à gauche */
+    width: 100%;
+    /* Prend toute la largeur de la page */
+    background-color: #634141;
+    /* Couleur de fond bordeaux */
+    z-index: 1000;
+    /* S'assure que le header reste au-dessus de tout autre élément */
+    height: 80px;
+    /* Hauteur du header */
+}
+
+/* ====== CONTENEUR DE LA NAVBAR ====== */
+.navbar {
+    display: flex;
+    /* Utilise Flexbox pour organiser les éléments horizontalement */
+    justify-content: space-between;
+    /* Espace les éléments aux extrémités (gauche et droite) */
+    align-items: center;
+    /* Centre les éléments verticalement */
+    padding: 20px 50px;
+    /* Espacement interne : 20px en haut/bas, 50px à gauche/droite */
+}
+
+/* ====== NOM DE LA MARQUE À GAUCHE ====== */
+.brand h1 {
+    font-size: 1.5rem;
+    /* Taille de la police */
+    font-weight: 500;
+    /* Épaisseur de la police (moyenne) */
+    color: #ffffff;
+    /* Couleur blanche */
+}
+
+/* ====== MENU DE NAVIGATION À DROITE ====== */
+.menu {
+    display: flex;
+    /* Affiche les liens de menu côte à côte */
+    gap: 30px;
+    /* Espacement horizontal entre les liens */
+    /* 'gap' fonctionne dans les conteneurs flex et grid */
+}
+
+.menu a {
+    font-family: "Montserrat", sans-serif;
+    /* Utilisation d'une police élégante */
+    text-decoration: none;
+    /* Supprime le soulignement des liens */
+    color: #ffffff;
+    /* Texte blanc */
+    font-weight: 200;
+    /* Police très fine */
+}
+
+/* ====== BOUTON DE CONNEXION / UTILISATEUR ====== */
+.cnx {
+    color: #ffffff;
+    /* Couleur du texte */
+    display: flex;
+    /* Affichage horizontal des icônes et textes */
+    align-items: center;
+    /* Centrage vertical */
+    gap: 10px;
+    /* Espace entre icône et texte */
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    /* Police fine */
+    cursor: pointer;
+    /* Change le curseur au survol */
+}
+
+/* Icône utilisateur */
+#user {
+    font-size: 25px;
+    /* Taille de l'icône (par exemple Font Awesome) */
+}
+
+/* Icône du menu hamburger (affiché sur mobile uniquement) */
+#bars {
+    display: none;
+    /* Caché par défaut, s'affichera avec les media queries */
+}
+
+/* home */
+
+.home {
+    background-image: url("img/bg1.avif");
+    background-size: cover;
+    /* couvre tout l’élément */
+    background-position: center;
+    /* centre l'image */
+    background-repeat: no-repeat;
+    /* évite la répétition */
+    height: 800px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 100px;
+    margin-right: 500px;
+    padding: 100px;
+}
+
+#home p {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#h1-1 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 85px;
+    font-style: italic;
+}
+
+#h1-2 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+
+#home button {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: #ffffff solid 1px;
+    margin-top: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.home-container button:hover {
+    background-color: #ffffff;
+    color: #634141;
+}
+
+.div-home2 {
+    display: none;
+}
+
+/* Meilleures ventes */
+
+.meilleures-ventes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 50px;
+}
+
+.meilleures-ventes-texte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meilleures-ventes-texte p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.meilleures-ventes-texte h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.meilleures-ventes-texte span {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.container-mv {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+}
+
+.box-mv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-mv img {
+    width: 220px;
+    height: 220px;
+}
+
+#img-mv1:hover {
+    content: url("img/crayon-yeux.avif");
+}
+
+#img-mv2:hover {
+    content: url("img/Rouge-à-lèvres.avif");
+}
+
+#img-mv3:hover {
+    content: url("img/Rose.avif");
+}
+
+#img-mv4:hover {
+    content: url("img/Fond-de-teint.avif");
+}
+
+#img-mv5:hover {
+    content: url("img/Ombre-à-paupières1.avif");
+}
+
+#img-mv6:hover {
+    content: url("img/Ombre-à-paupières2.avif");
+}
+
+.box-mv p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+}
+
+.box-mv a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.meilleures-ventes-container button {
+    background-color: transparent;
+    padding: 15px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: black solid 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.meilleures-ventes-container button:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+/* Boutique Lèvres */
+
+.bl-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bl-box1 {
+    background-color: black;
+    padding: 200px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.bl-box1 p {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.bl-box1 h1 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.bl-box1 span {
+    font-style: italic;
+}
+
+.bl-box1 button {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: #ffffff solid 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.bl-box1 button:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+.bl-box2 {
+    display: flex;
+    align-items: center;
+    /* centre verticalement */
+    justify-content: center;
+    /* centre horizontalement si tu veux */
+    position: relative;
+    overflow: visible;
+    /* pour permettre à l'image de "sortir" du div */
+}
+
+.bl-box2::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    /* ajuste horizontalement */
+    width: 100%;
+    /* image plus large que le div sans couvrir tout l'espace */
+    height: 120%;
+    /* idem pour la hauteur */
+    background-image: url('img/bg2.avif');
+    background-size: contain;
+    /* l'image garde ses proportions */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bl-box3 {
+    display: none;
+}
+
+/* Tendance actuelle */
+
+.tendance-actuelle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 50px;
+}
+
+.tendance-actuelle-texte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tendance-actuelle-texte p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tendance-actuelle-texte h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.tendance-actuelle-texte span {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.container-ta {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+
+.box-ta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-ta img {
+    width: 220px;
+    height: 220px;
+}
+
+.box-ta p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+}
+
+.box-ta a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+/* Découvrir plus */
+
+.decouvrir-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.decouvrir1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    /* Permet à l'image de dépasser */
+}
+
+.decouvrir1 h1 {
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.decouvrir1 span {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.container-dp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.box-dp {
+    position: relative;
+    overflow: visible;
+}
+
+.box-dp img {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    margin-bottom: -190px;
+    /* Fait sortir l'image vers le bas */
+    z-index: 0;
+    filter: brightness(0.8);
+}
+
+.decouvrir-texte {
+    position: absolute;
+    top: 165%;
+    left: 50%;
+    /* centre horizontalement */
+    transform: translate(-50%, -50%);
+    /* ajuste le centrage */
+    color: white;
+    z-index: 1;
+}
+
+.decouvrir-texte p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.decouvrir-texte h1 {
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.decouvrir2 {
+    background-color: black;
+}
+
+/* promo */
+
+.container-promo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 580px;
+}
+
+.box-promo1 {
+    position: relative;
+    overflow: visible;
+}
+
+.box-promo1 img {
+    height: 700px;
+    width: 110%;
+    position: relative;
+    margin-top: -120px;
+    /* Fait sortir l'image vers le haut */
+    z-index: 0;
+}
+
+.box-promo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 100px;
+    gap: 30px;
+}
+
+.box-promo2 p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.box-promo2 h1 {
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.box-promo2 span {
+    font-weight: 600;
+}
+
+.box-promo2 p1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.box-promo2 button {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: black solid 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.box-promo2 button:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+/* Notre conviction */
+
+.container-nc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url('img/bg4.avif');
+    background-size: cover;
+    /* couvre tout l’élément */
+    background-position: center;
+    /* centre l'image */
+    background-repeat: no-repeat;
+    /* évite la répétition */
+    color: #ffffff;
+    padding: 150px 300px;
+}
+
+.box-nc1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-nc1 p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.box-nc1 h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.box-nc1 span {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.box-nc2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box-nc2 p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.box-nc2 a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* Suivez-nous */
+
+.container-sv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-sv1 {
+    text-align: center;
+    padding: 70px;
+}
+
+.box-sv1 h1 {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.box-sv1 p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.box-sv2 {
+    display: flex;
+    align-self: start;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.box-sv2 img {
+    height: 300px;
+    width: 302px;
+}
+
+/* liste */
+
+.container-liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 150px;
+    background-color: black;
+    color: #ffffff;
+}
+
+.container-liste h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.container-liste span {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.container-liste p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.email {
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-label {
+    display: block;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.email-input-wrapper {
+    display: flex;
+    width: 700px;
+}
+
+.form-input {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: black;
+    border: 1px solid #ffffff;
+}
+
+.form-input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.form-input:focus {
+    border-color: #ffffff;
+    outline: none;
+    /* Supprimer la bordure bleue par défaut */
+}
+
+.email button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: white;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+}
+
+.email button:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+/* Pied de page */
+
+.pied-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: #ffffff;
+    border-top: #ffffff 1px solid;
+    padding: 90px;
+}
+
+.pied-box,
+.pied-box4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pied-box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pied-box2 h1 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.pied-box h1,
+.pied-box4 h1 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.pied-box p,
+.pied-box4 p,
+.pied-box2 p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.pied-box p {
+    cursor: pointer;
+}
+
+.pied-box4 span,
+.pied-box2 span {
+    cursor: pointer;
+}
+
+.pied-liste {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pied-liste i {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    /* Barre de navigation */
+
+    header {
+        position: absolute;
+        background-color: black;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .cnx {
+        display: none;
+    }
+
+    #bars {
+        display: block;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    /* home */
+
+    .home {
+        height: 300px;
+    }
+
+    .home-container {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: end; */
+        /* align-self: flex-end; */
+        justify-content: end;
+        /* justify-self: end; */
+    }
+
+    #home p {
+        font-weight: 200;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #p-home {
+        margin-top: 130px;
+    }
+
+    #h1-1 {
+        font-weight: 200;
+        font-size: 40px;
+    }
+
+    #h1-2 {
+        font-weight: 200;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .div-home1 {
+        display: none;
+    }
+
+    .div-home2 {
+        display: block;
+        background-color: #634141;
+        padding: 30px 20px;
+    }
+
+    #home button {
+        padding: 10px 30px;
+        margin-top: 10px;
+    }
+
+    /* Meilleures ventes */
+
+    .meilleures-ventes-container {
+        padding: 50px;
+        gap: 50px;
+    }
+
+    .meilleures-ventes-texte p {
+        font-weight: 200;
+        font-size: 16px;
+    }
+
+    .meilleures-ventes-texte h1 {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .container-mv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Boutique Lèvres  */
+
+    .bl-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bl-box1 {
+        padding: 70px 30px;
+        padding-right: 50px;
+    }
+
+    .bl-box1 p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-right: 100px;
+    }
+
+    .bl-box1 h1 {
+        font-size: 40px;
+    }
+
+    .bl-box1 button {
+        padding: 10px 30px;
+    }
+
+    .bl-box2 {
+        display: none;
+    }
+
+    .bl-box3 {
+        display: block;
+    }
+
+    .bl-box3 img {
+        width: 100%;
+    }
+
+    /* Tendance actuelle */
+
+    .tendance-actuelle-container {
+        padding: 50px;
+    }
+
+    .tendance-actuelle-texte p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .tendance-actuelle-texte h1 {
+        font-size: 40px;
+    }
+
+    .container-ta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Découvrir plus */
+
+    .decouvrir-container {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .decouvrir1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .decouvrir1 h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .container-dp {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    .box-dp img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+    }
+
+    .decouvrir-texte {
+        top: 50%;
+        /* centre verticalement */
+        padding: 0px;
+    }
+
+    .decouvrir-texte p {
+        font-size: 16px;
+    }
+
+    .decouvrir-texte h1 {
+        font-size: 40px;
+    }
+
+    .decouvrir2 {
+        display: none;
+    }
+
+    /* promo */
+
+    .container-promo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .container-promo div:nth-child(1) {
+        grid-row: 2;
+    }
+
+    .box-promo1 img {
+        height: 100%;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .box-promo2 {
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .box-promo2 p {
+        font-size: 16px;
+    }
+
+    .box-promo2 h1 {
+        font-size: 40px;
+    }
+
+    .box-promo2 button {
+        padding: 10px 30px;
+    }
+
+    /* Notre conviction */
+
+    .container-nc {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 70px 20px;
+        gap: 20px;
+    }
+
+    .box-nc1 h1 {
+        font-size: 40px;
+    }
+
+    /* Suivez-nous */
+
+    .box-sv1 {
+        padding: 50px;
+    }
+
+    .box-sv1 h1 {
+        font-size: 40px;
+    }
+
+    .box-sv1 p {
+        font-size: 16px;
+    }
+
+    .box-sv2 img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* liste */
+
+    .container-liste {
+        padding: 50px;
+    }
+
+    .container-liste h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .container-liste p {
+        font-size: 16px;
+    }
+
+    .email-input-wrapper {
+        width: 400px;
+    }
+
+    /* Pied de page */
+
+    .pied-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding: 50px;
+    }
+}

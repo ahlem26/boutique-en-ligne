@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import des icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Fichier CSS principal -->
+    <link rel="stylesheet" href="style.css">
+    <title>Noelle</title>
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <h1>Noelle</h1> <!-- Nom de la marque -->
+            </div>
+            <div class="menu"> <!-- Liens de navigation -->
+                <a href="#toutvoir">TOUT VOIR</a>
+                <a href="#nouveau">NOUVEAU</a>
+                <a href="#topventes">TOP VENTES</a>
+                <a href="#visage">VISAGE</a>
+                <a href="#levres">LÈVRES</a>
+                <a href="#yeux">YEUX</a>
+            </div>
+            <div class="cnx"> <!-- Icônes utilisateur et panier -->
+                <i id="user" class="fa-solid fa-circle-user"></i>
+                <a>Connexion</a>
+                <i id="bag" class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <i id="bars" class="fa-solid fa-bars"></i> <!-- Menu mobile -->
+        </nav>
+    </header>
+
+    <!-- Section accueil / hero -->
+    <section id="home">
+        <div class="home">
+            <div class="home-container">
+                <p id="p-home">NOUVEAUTÉ</p>
+                <h1 id="h1-1">Brillance</h1>
+                <h1 id="h1-2">métallique</h1>
+                <div class="div-home1">
+                    <p>Texte descriptif de la nouveauté.</p>
+                    <button id="btn-1">Boutique</button>
+                </div>
+            </div>
+        </div>
+        <div class="div-home2">
+            <p>Texte version mobile ou réduite</p>
+            <button id="btn-1">Boutique</button>
+        </div>
+    </section>
+
+    <!-- Section Meilleures ventes -->
+    <section id="meilleures-ventes">
+        <div class="meilleures-ventes-container">
+            <div class="meilleures-ventes-texte">
+                <p>LES INCONTOURNABLES</p>
+                <h1>Meilleures <span>ventes</span></h1>
+            </div>
+            <div class="container-mv"> <!-- Liste des produits en vente -->
+                <!-- Produit 1 -->
+                <div class="box-mv">
+                    <img id="img-mv1" src="img/Crayon-pour-les-yeux-Pouvoir-Noir.avif">
+                    <p>Crayon pour les yeux Pouvoir Noir</p>
+                    <a>15,00 €</a>
+                </div>
+                <!-- Produit 2 -->
+                <div class="box-mv">
+                    <img id="img-mv2" src="img/Rouge-à-lèvres-velours-luxe.avif">
+                    <p>Rouge à lèvres velours luxe</p>
+                    <a>15,00 €</a>
+                </div>
+                <!-- etc. jusqu'à 6 produits -->
+            </div>
+            <button id="btn-2">Boutique Meilleures ventes</button>
+        </div>
+    </section>
+
+    <!-- Section Boutique Lèvres -->
+    <section id="boutique-levres">
+        <div class="bl-container">
+            <div class="bl-box1">
+                <p>CHAUDES ET ÉPICÉES</p>
+                <h1>Les lèvres les plus <span>vibrantes</span> de la ville</h1>
+                <p>Texte explicatif sur les produits pour les lèvres.</p>
+                <button>Boutique Lèvres</button>
+            </div>
+            <div class="bl-box2"></div> <!-- Élément de décoration / vide -->
+            <div class="bl-box3">
+                <img src="img/bg2.avif">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tendance actuelle -->
+    <section id="tendance-actuelle">
+        <div class="tendance-actuelle-container">
+            <div class="tendance-actuelle-texte">
+                <p>À NE PAS MANQUER</p>
+                <h1><span>Tendance</span> actuelle</h1>
+            </div>
+            <div class="container-ta">
+                <!-- Liste de produits tendance (même structure que meilleurs ventes) -->
+                <div class="box-ta">
+                    <img id="img-ta" src="img/Baiser-au-chocolat.avif">
+                    <p>Baiser au chocolat</p>
+                    <a>15,00 €</a>
+                </div>
+                <!-- etc. -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Découvrir plus -->
+    <section id="decouvrir-plus">
+        <div class="decouvrir-container">
+            <div class="decouvrir1">
+                <h1>Découvrir <span>plus</span></h1>
+                <div class="container-dp">
+                    <!-- Bloc yeux -->
+                    <div class="box-dp">
+                        <img src="img/yeux.avif">
+                        <div class="decouvrir-texte">
+                            <p>BOUTIQUE</p>
+                            <h1>YEUX</h1>
+                        </div>
+                    </div>
+                    <!-- etc. pour visage et lèvres -->
+                </div>
+            </div>
+            <div class="decouvrir2"></div> <!-- Élément vide ou décoratif -->
+        </div>
+    </section>
+
+    <!-- Section Promo -->
+    <section id="promo">
+        <div class="container-promo">
+            <div class="box-promo1">
+                <img src="img/bg3.avif">
+            </div>
+            <div class="box-promo2">
+                <p>CE WEEK-END UNIQUEMENT</p>
+                <h1><span>-15 %</span> sur tout le site</h1>
+                <p>Texte promo</p>
+                <p1>Utilisez le code AIME15 à la caisse</p1>
+                <button>Tout voir</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Notre conviction -->
+    <section id="nc">
+        <div class="container-nc">
+            <div class="box-nc1">
+                <p>Notre conviction</p>
+                <h1>Votre <span>peau</span> <br>est prioritaire</h1>
+            </div>
+            <div class="box-nc2">
+                <p>Texte sur les valeurs de l'entreprise</p>
+                <p>Texte explicatif ou storytelling</p>
+                <a>Rejoignez le Club de Noelle</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Suivez-nous (réseaux sociaux) -->
+    <section id="suivez-nous">
+        <div class="container-sv">
+            <div class="box-sv1">
+                <h1>Suivez-nous</h1>
+                <p>@beauté.boutique</p>
+            </div>
+            <div class="box-sv2">
+                <!-- Images Instagram ou galerie -->
+                <img src="img/01.jpg">
+                <img src="img/02.jpg">
+                <img src="img/03.jpg">
+                <img src="img/04.jpg">
+                <img src="img/05.jpg">
+                <img src="img/06.jpg">
+                <img src="img/07.jpg">
+                <img src="img/08.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Liste (newsletter) -->
+    <section id="liste">
+        <div class="container-liste">
+            <h1>Êtes-vous sur <span>la liste ?</span></h1>
+            <p>Abonnement = offres et remises exclusives</p>
+            <div class="email">
+                <label for="email" class="form-label">Saisissez votre e-mail ici*</label><br />
+                <div class="email-input-wrapper">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="E-mail" />
+                    <button>Rejoindre</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page (footer) -->
+    <footer class="pied-page">
+        <div class="pied-container">
+            <!-- Colonne Boutique -->
+            <div class="pied-box">
+                <h1>Boutique</h1>
+                <p>Tous les produits</p>
+                <p>Nouveau</p>
+                <p>Top ventes</p>
+                <p>Lèvres</p>
+                <p>Yeux</p>
+                <p>Visage</p>
+            </div>
+            <!-- Colonne Adresse -->
+            <div class="pied-box2">
+                <h1>Notre boutique</h1>
+                <p>Adresse + horaires</p>
+                <p>Contact</p>
+            </div>
+            <!-- Colonne Politique -->
+            <div class="pied-box">
+                <h1>Politique</h1>
+                <p>Expédition et retours</p>
+                <p>Politique de boutique</p>
+                <p>Moyens de paiement</p>
+                <p>Politique de cookies</p>
+                <p>Mentions légales</p>
+                <p>FAQ</p>
+            </div>
+            <!-- Colonne Réseaux sociaux -->
+            <div class="pied-box4">
+                <h1>Service client</h1>
+                <p>Tél : 01 23 45 67 89</p>
+                <p><span>E-mail : info@monsite.fr</span></p>
+                <ul class="pied-liste">
+                    <li class="pied-item"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="pied-item"><i class="fa-brands fa-facebook-f"></i></li>
+                    <li class="pied-item"><i class="fa-brands fa-youtube"></i></li>
+                    <li class="pied-item"><i class="fa-brands fa-twitter"></i></li>
+                </ul>
+                <div class="pied-texte">
+                    <p>© 2025 Noelle. <br>Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
